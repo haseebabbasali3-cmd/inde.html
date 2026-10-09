@@ -971,7 +971,16 @@
         </div>
     </div>
 
-    <script>
+   
+        /* =========================================================
+           3. PORTFOLIO FILTER & MODAL
+        ========================================================= */
+        function filterProjects(cat, btn) {
+            const cards = document.querySelectorAll('.project-card');
+            const btns = document.querySelectorAll('.port-btn');
+
+            btns.forEach(b => {
+            <script>
         /* =========================================================
            1. ANIMATED COUNTERS FOR STATS
         ========================================================= */
@@ -1012,16 +1021,7 @@
                 icon.className = "fa-solid fa-moon text-sm text-neonCyan";
             }
         }
-
-        /* =========================================================
-           3. PORTFOLIO FILTER & MODAL
-        ========================================================= */
-        function filterProjects(cat, btn) {
-            const cards = document.querySelectorAll('.project-card');
-            const btns = document.querySelectorAll('.port-btn');
-
-            btns.forEach(b => {
-                b.classList.remove('border-neonCyan', 'text-neonCyan');
+     b.classList.remove('border-neonCyan', 'text-neonCyan');
                 b.classList.add('border-white/10', 'text-gray-400');
             });
 
